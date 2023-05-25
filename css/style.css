@@ -59,12 +59,12 @@ a{
 }
 
 .page-body{
-    min-width: 2000px;
+    /*min-width: 2000px;*/
     margin: 0;
     padding: 0;
     font-family: "Roboto";
     font-size: 18pt;
-    line-height: 30pt;
+    color:var(--font-gray);
 }
 
 .main-header{
@@ -80,29 +80,104 @@ a{
 .main-navigation-login{
     color: var(--blue);
     border: 1px solid var(--blue) ;
-    border-radius: 9px;
-    text-align: center;
 }
 
 .container{
-    margin-right: 250px;
-    margin-left: 250px;
+    /*margin-right: 250px;*/
+    /*margin-left: 250px;*/
 }
-
-.site-title{
+.dark-section{
     background-color: var(--basic-dark);
-
 }
-.site-title h2{
-    font-family: "Roboto";
+.dark-section .name-section{
+    color: var(--basic-white);
+}
+.white-section{
+    background-color: var(--basic-white);
+}
+.white-section .name-section, .white-section h3{
+    color: var(--basic-black);
+}
+
+.name-section{
     font-weight: 100;
     font-size: 60pt;
-    color: var(--basic-white);
     text-align: center;
 }
-
-.site-title p{
-    color:var(--font-gray);
-    font-size: 36pt;
+.button{
+    font-size: 18pt;
+    line-height: 48px;
+    display: inline-block;
+    height: 48px;
+    border-radius: 24px;
     text-align: center;
+}
+.button-blue{
+    color: var(--basic-white);
+    background-color: var(--blue);
+}
+.button-white{
+    color: var(--basic-black);
+    border:1px solid var(--font-gray);
+}
+.features-list{
+    list-style: none;
+}
+.features-item{
+    text-align: center;
+}
+.open-in-browser{
+    background-color: var(--basic-gray);
+}
+
+.open-in-browser-list{
+    list-style: none;
+}
+.open-in-browser-item{
+    color: var(--blue);
+}
+.circle-button{
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--font-gray);
+}
+.column-name{
+    font-size: 30.59pt;
+    color: var(--basic-white);
+}
+.task-item{
+    background-color: var(--basic-white);
+}
+.task-item h3{
+    color: var(--basic-black);
+    font-size: 18pt;
+}
+.task-item p{
+    font-size: 14pt;
+}
+.in-progress p{
+    color: var(--font-gray);
+}
+.completed p {
+    color: #01bf1c;
+}
+.move p{
+    color: #f83c7b;
+}
+.empty{
+    background-color: transparent;
+    border: 1px solid var(--font-gray);
+}
+.empty h3{
+    color: var(--font-gray);
+}
+.psd-template{
+    background-color: var(--basic-gray);
+}
+.psd-template-text{
+    text-align: center;
+}
+.inscription h3{
+    font-size: 24pt;
+    font-weight: bold;
 }
