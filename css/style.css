@@ -52,6 +52,7 @@
     --basic-black: #000000;
     --basic-white: #ffffff;
     --font-gray: #8492af;
+    --green:#01bf1c;
 }
 
 a{
@@ -180,4 +181,48 @@ a{
 .inscription h3{
     font-size: 24pt;
     font-weight: bold;
+}
+
+.pricing{
+    text-align: center;
+}
+.pricing-list{
+    list-style: none;
+}
+.pricing-item{
+    text-align: center;
+}
+.pricing-item h3{
+    font-size: 24pt;
+    font-weight: 400;
+
+}
+.price{
+    color: var(--basic-black);
+    font-size: 72pt;
+    font-weight: bold;
+}
+.dollar{
+    font-size: 40pt;    
+}
+.mon-description{
+    font-size: 24pt;
+    font-weight: 400;
+    color: var(--font-gray);
+}
+.content-tarif-list{
+    list-style: none;
+}
+.copyright{
+    font-size: 18pt;
+}
+.main-footer-links-list{
+    list-style: none;
+}
+.main-footer-link-item a{
+    text-decoration: none;
+    color: var(--font-gray);
+}
+.social-list{
+   list-style: none;
 }
