@@ -58,6 +58,15 @@
 a{
     text-decoration: none;
 }
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.page{
+    height: 100%;
+}
+
 
 .page-body{
     /*min-width: 2000px;*/
@@ -66,16 +75,47 @@ a{
     font-family: "Roboto";
     font-size: 18pt;
     color:var(--font-gray);
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
 }
 
 .main-header{
-    background-color: var(--basic-dark);
+
     color: var(--basic-white);
     margin: 0;
 
 }
+.main{
+
+
+}
+
+.site-title{
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.name-section{}
+.name-description{}
+.name-button{}
+.site-title-image{}
+
+.main-navigation{
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+}
+
+.main-logo{
+
+}
 .main-navigation-list{
-    list-style: none;
+
+    display: grid;  
+    
+}
+.login-wrapper{
+
 }
 
 .main-navigation-login{
@@ -84,8 +124,9 @@ a{
 }
 
 .container{
-    /*margin-right: 250px;*/
-    /*margin-left: 250px;*/
+    width: 1485px;
+    padding: 15px;
+    margin: 0 auto;
 }
 .dark-section{
     background-color: var(--basic-dark);
@@ -122,10 +163,14 @@ a{
     border:1px solid var(--font-gray);
 }
 .features-list{
-    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
 }
 .features-item{
     text-align: center;
+    outline: 5px solid rgba(0,255,0,0.7);
 }
 .open-in-browser{
     background-color: var(--basic-gray);
@@ -137,6 +182,28 @@ a{
 .open-in-browser-item{
     color: var(--blue);
 }
+.drag-n-drop{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    outline: 5px solid rgba(255,0,0,0.7);
+    outline-offset: -5px;
+    gap:50px;
+}
+.drag-n-drop-text{
+    order: 1;
+}
+
+.psd-template{
+    display: grid;
+}
+.inscription-left{
+    justify-self: end;
+    text-align: right;
+    width: 322px;
+
+}
+
+
 .circle-button{
     border-radius: 50%;
     background-color: transparent;
@@ -185,12 +252,21 @@ a{
 
 .pricing{
     text-align: center;
+    display: grid;
 }
 .pricing-list{
     list-style: none;
+    display: grid;
+    grid-template-columns:  360px 360px 360px;
+    justify-content: center;
+    gap: 140px;
 }
 .pricing-item{
     text-align: center;
+    height: 420px;
+    outline: 5px solid rgba(0,255,0,0.7);
+    outline-offset: -5px;
+    
 }
 .pricing-item h3{
     font-size: 24pt;
@@ -216,13 +292,16 @@ a{
 .copyright{
     font-size: 18pt;
 }
-.main-footer-links-list{
-    list-style: none;
-}
+
 .main-footer-link-item a{
     text-decoration: none;
     color: var(--font-gray);
 }
-.social-list{
-   list-style: none;
+.main-footer{
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    gap:80px;
+}
+.main-footer-link{
+    text-align: end;
 }
