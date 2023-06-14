@@ -81,46 +81,89 @@ ul{
 }
 
 .main-header{
-
     color: var(--basic-white);
     margin: 0;
-
+   
+    background: url(../img/Line.png) no-repeat,
+                url(../img/grid.png);
+    
 }
 .main{
+    margin: 0;
+    padding: 0;
 
-
+}
+h2,p,a{
+    margin: 0;
+    padding: 0;
 }
 
 .site-title{
-    display: grid;
-    grid-auto-rows: 1fr 1fr 1fr;
-    justify-items: center;
+    position: relative;
+    display: grid;    
+    grid-template-rows: max-content max-content max-content;
+    outline: 5px solid rgba(255,255,0,0.7);
+    
 }
-.name-section{}
-.name-description{}
-.name-button{}
-.site-title-image{}
+.site-title-image{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 325px;
+    text-align: center;
+    
+}
+.name-section{
+    display: block;
+ }
+.name-description{
+    display: block;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 36pt;
+    color: var(--font-gray);
+    margin-bottom: 85px;
+}
 
+.name-button{
+    outline: 5px solid rgba(0,255,0,0.7);
+    margin-bottom: 570px;
+}
 .main-navigation{
+
+    margin-top: 90px;
     display: grid;
     grid-template-columns: min-content 1fr min-content;
+    margin-bottom: 160px;
 }
 
 .main-logo{
-
+    align-self: center;
 }
 .main-navigation-list{
-
-    display: grid;  
-    
+    justify-self: end;
+    display: grid; 
+    grid-template-columns: max-content max-content max-content max-content;
+    gap: 45px;
+    align-self: center;
+    margin-right: 45px;
 }
-.login-wrapper{
 
+.main-navigation-item{    
+    font-family: "Roboto";
+    font-size: 18pt;
+    color:var(--basic-white);
 }
+
 
 .main-navigation-login{
+    display: block;
     color: var(--blue);
+    min-width: 130px;;
     border: 1px solid var(--blue) ;
+    align-self: center;
 }
 
 .container{
@@ -299,9 +342,33 @@ ul{
 }
 .main-footer{
     display: grid;
-    grid-template-columns: max-content 1fr max-content;
-    gap:80px;
+    grid-template-columns: 1fr 1fr max-content;
+    gap: 80px;
+}
+.copyright{
+    justify-self: start;
+    outline: 5px solid rgba(0,255,0,0.7);
+    outline-offset: -5px;
 }
 .main-footer-link{
-    text-align: end;
+    justify-self: end;
+    outline: 5px solid rgba(0,0,255,0.7);
+    outline-offset: -5px;
+}
+.social{
+    justify-self: end;
+    outline: 5px solid rgba(255,0,255,0.7);
+    outline-offset: -5px;
+}
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
